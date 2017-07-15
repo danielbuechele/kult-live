@@ -1,0 +1,40 @@
+.LowerThird {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	height: 80px;
+	display: flex;
+}
+
+.LowerThird .container {
+	background: white;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	width: 0%;
+	overflow: hidden;
+	transition: 300ms width;
+	margin-left: 15px;
+}
+
+.LowerThird h1 {
+	font-size: 50px;
+	margin-bottom: -12px;
+	white-space: nowrap;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.LowerThird .logo {
+	opacity: 0;
+	transition: 300ms opacity;
+	width: 80px;
+}
+
+.LowerThird.visible .container {
+	width: 100%;
+}
+
+.LowerThird.visible .logo {
+	opacity: 1;
+}

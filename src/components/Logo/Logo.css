@@ -1,0 +1,8 @@
+.Logo {
+	min-width: 80px;
+	max-width: 80px;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+}

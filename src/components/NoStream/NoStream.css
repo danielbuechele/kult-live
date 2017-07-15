@@ -1,0 +1,66 @@
+.NoStream {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 0;
+	transition: 300ms opacity;
+}
+
+.NoStream.one {
+	background-image: url("../../assets/images/teenagers.gif");
+	background-color: #f58164;
+}
+.NoStream.two {
+	background-image: url("../../assets/images/couple.gif");
+	background-color: #fec877;
+}
+.NoStream.three {
+	background-image: url("../../assets/images/grumpy.gif");
+	background-color: #a8bccc;
+}
+
+.NoStream hgroup {
+	background: white;
+	padding: 30px 50px 10px;
+	box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: -300px;
+	transition: 300ms bottom;
+	transition-delay: 1000ms;
+}
+
+.NoStream h1 {
+	font-size: 90px;
+}
+
+.NoStream h2 {
+	font-weight: 300;
+	font-size: 90px;
+}
+
+.NoStream .animation {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	min-height: 100%;
+	/*/filter: hue-rotate(-12deg) brightness(56%) saturate(240%) */
+}
+
+.NoStream.visible {
+	opacity: 1;
+}
+
+.NoStream.visible hgroup {
+	bottom: 70px;
+}

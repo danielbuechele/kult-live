@@ -1,0 +1,12 @@
+{
+    "name": "switcher",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "node-osc": "^2.1.0"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
+}
